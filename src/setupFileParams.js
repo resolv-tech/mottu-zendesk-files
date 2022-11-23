@@ -9,7 +9,7 @@ async function getFileParams(data) {
 
 async function generateFileName(phone, extension){
     const timestamp = Date.now().toString();
-    const phone = phone.toString()
+    phone = phone.toString()
     const filename = `${timestamp}${phone}.${extension}`
     return filename
 }
